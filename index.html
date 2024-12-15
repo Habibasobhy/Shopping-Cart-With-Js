@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in</title>
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/login-signup.css">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <!-- & Start   Login -->
+
+  <main class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="container rounded-5 w-75 auth-container">
+      <div class="row p-3">
+        <div class="col-md-6">
+          <div class="auth-content rounded-4 py-4">
+
+            <h1 class="fw-bolder mb-3">Login</h1>
+
+            <form class="auth-form">
+              <div class="UserEmail mb-3 position-relative">
+                <label for="userEmail">Email</label>
+                <input type="email" placeholder="Enter Your Email..." class="form-control mt-2" id="userEmail">
+                <i class="fa-solid fa-envelope position-absolute"></i>
+              </div>
+
+              <div class="userPassword mb-3 position-relative">
+                <label for="userPassword">Password</label>
+                <input type="password" placeholder="Enter Your Password..." class="form-control mt-2" id="userPassword">
+                <span id="togglePassword">
+                  <i class="fa-solid fa-eye-slash position-absolute"></i>
+                </span>
+              </div>
+
+              <p id="confirm" class="text-center"></p>
+
+              <button type="submit" class="btn w-100 text-white mt-5" id="signInBtn">Sign in</button>
+
+            </form>
+
+            <div class="login-signup-prompt mt-4 fw-bold text-center">
+              <p>Don't have an account yet?
+                <a href="HTML/signUp.html" class="fw-bold">Sign Up</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-center justify-content-end auth-img">
+          <img src="Images/89e31fb982e6d87f239196db2b3e9ccc copy 1.png" alt="Login Image">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- & End     Login -->
+
+  <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/login.js"></script>
+</body>
+
+</html>

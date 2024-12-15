@@ -1,0 +1,14 @@
+.logout .container{
+    background-color : var(--grey-color);
+    width: 50%;
+}
+
+#userName{
+    color : var(--light-orange-color);
+}
+
+@media screen and (max-width : 768px){
+    .logout .container{
+        width: 90%;
+    }
+}

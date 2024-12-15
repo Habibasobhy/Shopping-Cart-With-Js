@@ -1,0 +1,38 @@
+.productDetails .container{
+    width: 80%;
+    margin-top: 70px;
+}
+
+.productDetails .productName{
+    color : var(--light-green-color);
+}
+
+.productDetails img{
+    height: 350px;
+    width: 88%;
+}
+
+.heart,
+.red-heart{
+    margin-right : 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width : 567px){
+    #addToCartBtn{
+        display : block;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (max-width : 767px){
+    .productDetails img{
+        height: 300px;
+        width: 75%;
+    }
+
+    .heart,
+    .red-heart{
+        margin-right : 0;
+    }
+}

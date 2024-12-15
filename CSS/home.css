@@ -1,0 +1,70 @@
+/* & Start Home Style */
+.home #searchInput{
+    width: 80%;
+}
+
+.home #searchInput:focus{
+    border-color : #18d718;
+    box-shadow: 0 0 0 .25rem #18d718;
+}
+
+
+.home .product .product-content p:nth-child(2){
+    line-height: 25px;
+}
+
+.home .product .product-img{
+    overflow: hidden;
+}
+
+.home .product .product-img img{
+    width: 230px;
+    height: 225px;
+}
+
+.home .product{
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.home .product:hover{
+    border : 2px solid var(--light-green-color);
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+}
+
+.home .description{
+    position: relative;
+}
+
+.home .description::after {
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.home .description:hover::after{
+    content : attr(data-tooltip);
+    position: absolute;
+    background-color: var(--dark-green-color);
+    color: var(--white-color);
+    border-radius : 10px;
+    left: 0;
+    top: 100%;
+    padding: 5px 10px;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(5px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+@media screen and (max-width : 575px){
+    #searchInput{
+        margin-left : 25px;
+    }
+}
+
+/* & End   Home Style */
